@@ -1,0 +1,13 @@
+{
+  "id": "blast-radius",
+  "name": "Blast radius",
+  "version": "0.1.0",
+  "protocol": 3,
+  "description": "Measures what a destructive command would touch, on the permission card. Read-only probes; it never allows or blocks anything.",
+  "worker": {"command": ["node", "worker.mjs"]},
+  "hooks": ["permission.request"],
+  "permissions": ["process.run", "mod.publish"],
+  "slots": ["permission.detail"],
+  "always_on": true,
+  "default_off": false
+}
